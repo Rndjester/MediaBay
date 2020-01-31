@@ -1,0 +1,35 @@
+header
+    position: relative
+    background-color: $headFootColor
+    height: 80px
+    &::after 
+        position: absolute
+        content: ''
+        height: 1px
+        width: 50%
+        right: 8.5%     
+        background-color: $mainColor
+        bottom: -1px
+.navbar 
+    display: flex
+    justify-content: space-between
+.logo
+    margin-top: 15px
+    & img
+        float: left
+    & span 
+        +PlayFair(normal, 17) 
+        color: $fontColor
+        display: inline-block
+        margin-left: 10px
+.menu
+    display: flex
+    justify-content: space-between
+    list-style: none
+    margin-top: 30px
+    &__item
+        position: relative
+        margin-right: 50px
+        cursor: pointer
+        +border-bottom_hover
+            

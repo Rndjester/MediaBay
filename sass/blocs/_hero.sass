@@ -1,0 +1,33 @@
+.hero
+    padding: 62px 0
+.container
+    position: relative
+.owl-slider
+    position: absolute
+    z-index: 50
+    right: 0
+    &__item
+        &:last-child
+            display: none
+.back-title
+    position: absolute
+    +PlayFair(normal, 290px)
+    color: $backSquerColor
+    margin-top: -70px
+.title-block
+    box-sizing: border-box
+    position: absolute
+    width: 1033px
+    height: 633px
+    padding: 80px 120px
+    left: -14%
+    +Montserrat(normal, 30px)
+    color: $fontColor
+    background-color: $backSquerColor
+    margin-top: -110px
+    &__title
+        +PlayFair(bold, 160px)
+        padding: 0
+        margin: 0
+    &__subtitle
+        margin-bottom: 95px
