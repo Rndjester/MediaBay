@@ -1,26 +1,27 @@
 .hero
     padding: 62px 0
-.container
+.hero__container
     position: relative
 .owl-slider
     position: absolute
     z-index: 50
     right: 0
+    top: 62px
     &__item
         &:last-child
             display: none
 .back-title
-    position: absolute
+    position: relative
     +PlayFair(normal, 290px)
     color: $backSquerColor
     margin-top: -70px
 .title-block
     box-sizing: border-box
-    position: absolute
+    position: relative
     width: 1033px
     height: 633px
     padding: 80px 120px
-    left: -14%
+    left: -120px
     +Montserrat(normal, 30px)
     color: $fontColor
     background-color: $backSquerColor

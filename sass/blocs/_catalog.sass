@@ -1,0 +1,53 @@
+.catalog
+    padding: 150px 0px 100px 0px
+    &__title
+        padding: 0
+        margin: 0
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+    &__item
+        box-sizing: border-box
+        flex-basis: 23%
+        margin-right: 2%
+        margin-bottom: 40px
+        &-good
+            background-color: #FEFEFE
+            padding: 0 0 35px 30px
+            border: 1px solid transparent
+            &:hover
+                border: 1px solid $strokeColor
+        &-title
+            color: $mainColor
+            +Montserrat(500, 18px)
+            padding: 0
+            margin: 0
+        &-description
+            color: $mainColor
+            line-height: 28px
+    &__price
+        padding: 30px
+        +PlayFair(bold, 24px)
+        color: $mainColor
+    &__button
+        float: right
+    &__more
+        position: relative
+        text-align: center
+        margin-bottom: 2px
+        & > span
+            &::after 
+                position: absolute
+                content: ""
+                width: 0
+                height: 2px
+                background-color: $mainColor
+                bottom: -1px
+                left: 47.8%
+                transition: all .5s
+            &:hover
+                &:after 
+                    width: 70px
+        & img
+            margin-bottom: 3px
+            margin-left: 20px

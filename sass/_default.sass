@@ -9,8 +9,8 @@ body
     margin: auto
 .title 
     +PlayFair(bold, 36px)
-.subtitle 
-    +Montserrat(normal, 16px)
+.subtitle
+    +Montserrat(500, 18px)  
 .button 
     position: relative
     width: 200px
@@ -21,6 +21,7 @@ body
     color: $btnfontColor
     transition: 0.5s
     border: none
+    outline: none
     &::after
         position: absolute
         box-sizing: border-box 
@@ -48,14 +49,15 @@ body
         width: 180px
         height: 48px
         +PlayFair(bold, 18px)
-        padding: 20px 50px
+        padding: 10px 40px
         border: 1px solid $buttonColor
+        outline: none
         background-color: transparent
         color: $fontColor
         transition: 0.5s
         &:hover
-            background-color: $btnfontColor
-            color: $buttonColor
+            background-color: $buttonColor
+            color: $btnfontColor
 @mixin border-bottom_hover()
     &::after 
         position: absolute
@@ -68,6 +70,14 @@ body
         transition: all .5s
     &:hover
         &:after 
-            width: 50%
+            width: 100%
+.input__text
+    height: 23px
+    margin-bottom: 30px
+    background-color: transparent
+    border: none
+    outline: none
+    color: $mainColor
+    border-bottom: 1px solid $mainColor
 
         
