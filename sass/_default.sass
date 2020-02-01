@@ -4,7 +4,7 @@ body
     margin: 0
     color: $fontColor
 .container 
-    width: 87.5%
+    width: 89%
     padding: 0
     margin: auto
 .title 
@@ -72,6 +72,7 @@ body
         &:after 
             width: 100%
 .input__text
+    width: 385px
     height: 23px
     margin-bottom: 30px
     background-color: transparent
@@ -79,5 +80,10 @@ body
     outline: none
     color: $mainColor
     border-bottom: 1px solid $mainColor
-
-        
+@media (max-width:  1440px)
+    body
+        font-size: 14px
+    .title 
+        font-size: 30px
+    .subtitle
+        font-size: 16px

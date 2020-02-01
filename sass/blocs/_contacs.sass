@@ -1,26 +1,95 @@
 .question
     &__block
+        box-sizing: border-box
         position: absolute
         right: 0
         background-color: $btnfontColor
-        padding: 75px 280px 75px 140px
-        height: 40%
+        margin-top: 10px
+        padding: 75px 0px 75px 140px
+        width: 44%
+        height: 560px
     &__form
         display: flex
         flex-direction: column
-.contacs
+.contacts
+    position: relative
+    z-index: 1
     &__title
         padding-top: 100px
         padding-left: 120px
-    &__wrap1
-        width: 50.5%
     &__wrap
+        width: 57%
+    &__list
         display: flex
         flex-wrap: wrap 
         padding-left: 120px
+        margin-bottom: 50px
     &__item
         +Montserrat(normal, 18)
         flex-basis: 30%
         line-height: 24px
         &:nth-child(2n)
-            margin-left: 200px   
+            margin-left: 200px 
+    &__back-title
+        z-index: -1
+        top: 50px
+        left: 70px
+        position: absolute
+        +PlayFair(normal, 340px)
+        color: $backSquerColor
+.form__checkbox
+    opacity: 0
+    &-label
+        position: relative
+        font-size: 10px
+        &::before
+            position: absolute
+            content: '\2714'
+            line-height: 10px
+            top: 5px
+            // color: #ffffff
+            font-size: 9px
+            width: 10px
+            height: 10px
+            background-color: #ffffff
+            border: 1px solid $strokeColor
+input[type='checkbox']:checked + label:before
+    background-color: $strokeColor
+    color:#fff
+#license 
+    margin-bottom: 15px 
+#mailing
+    margin-bottom: 50px  
+@media (max-width: 1440px)
+    .question
+        &__block
+            right: 0
+            padding: 75px 100px 75px 140px
+            width: 51.2%
+            margin-top: 30px
+            height: 560px
+    .contacts
+        margin-bottom: 256px
+        &__title
+            padding-top: 120px
+        &__wrap
+            width: 47%
+        &__list
+            display: flex
+            flex-wrap: wrap 
+            padding-left: 0px
+            margin-bottom: 56px
+        &__item
+            font-size: 16px
+            line-height: 20px
+            &:nth-child(2n)
+                margin-left: 200px 
+        &__back-title
+            z-index: -1
+            top: 170px
+            left: 50px
+            font-size: 220px
+        &__maps
+            position: absolute
+            width: 700px
+            left: 0

@@ -8,12 +8,17 @@
         flex-wrap: wrap
     &__item
         box-sizing: border-box
-        flex-basis: 23%
-        margin-right: 2%
+        flex-basis: 22%
+        margin-right: 45px
         margin-bottom: 40px
+        &:nth-of-type(4n)
+            margin-right: 0
+        &-img
+            height: 328px
+            width: 328px
         &-good
             background-color: #FEFEFE
-            padding: 0 0 35px 30px
+            padding: 0 20px 35px 30px
             border: 1px solid transparent
             &:hover
                 border: 1px solid $strokeColor
@@ -51,3 +56,17 @@
         & img
             margin-bottom: 3px
             margin-left: 20px
+@media (max-width:  1440px)
+    .catalog
+        padding: 50px 0px 100px 0px
+        &__item
+            &-img
+                height: 220px
+                width: 220px  
+        &__price
+            padding: 25px 20px
+            font-size: 18px
+        &__button
+            width: 150px
+            padding: 10px
+            margin-top: -10px

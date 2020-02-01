@@ -10,9 +10,11 @@
     &__item
         &:last-child
             display: none
+        & > img 
+            width: 100%
 .back-title
     position: relative
-    +PlayFair(normal, 290px)
+    +PlayFair(normal, 300px)
     color: $backSquerColor
     margin-top: -70px
 .title-block
@@ -32,3 +34,25 @@
         margin: 0
     &__subtitle
         margin-bottom: 95px
+@media (max-width:  1440px)
+    .owl-slider
+        top: -10px
+        &__item
+            & > img 
+                width: 692px
+.back-title
+    margin-top: 0px
+    font-size: 200px
+    margin-left: -90px   
+.title-block
+    margin-top: -50px
+    height: 460px
+    padding: 0px 120px
+    left: 0px
+    &__title
+        font-size: 110px
+    &__subtitle
+        font-size: 22px
+        line-height: 34px
+        margin-bottom: 70px
+    &__button
