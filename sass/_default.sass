@@ -22,29 +22,39 @@ body
     transition: 0.5s
     border: none
     outline: none
+    cursor: pointer
     &::after
         position: absolute
         box-sizing: border-box 
         content: ''
         width: 200px
         height: 58px
-        bottom: -5px
-        right: -5px
+        bottom: 0px
+        right: 0px
         border: 1px solid $buttonColor
         background-color: transparent
+        transition: 0.3s
     &::before  
         position: absolute  
         box-sizing: border-box 
         content: ''
         width: 200px
         height: 58px
-        left: -5px
-        top: -5px
+        left: 0px
+        top: 0px
         border: 1px solid $buttonColor
         background-color: transparent
-    // &:hover 
-    //     background-color: $btnfontColor
-    //     color: $buttonColor
+        transition: 0.3s
+    &:hover
+        transition: 0.3s
+        &::after
+            bottom: -5px
+            right: -5px    
+            transition: 0.3s     
+        &::before  
+            left: -5px
+            top: -5px
+            transition: 0.3s
 .catalog__button
         width: 180px
         height: 48px
@@ -55,6 +65,7 @@ body
         background-color: transparent
         color: $fontColor
         transition: 0.5s
+        cursor: pointer
         &:hover
             background-color: $buttonColor
             color: $btnfontColor
@@ -71,6 +82,9 @@ body
     &:hover
         &:after 
             width: 100%
+.link 
+    text-decoration: none
+    color: $fontColor
 .input__text
     width: 385px
     height: 23px
@@ -80,6 +94,17 @@ body
     outline: none
     color: $mainColor
     border-bottom: 1px solid $mainColor
+    &:focus
+        border-bottom: 1px solid $fontColor
+    &::placeholder
+        color: $mainColor
+.cite__link
+    border-bottom: 1px solid $strokeColor
+    & > svg
+        margin-left: 20px
+.form__checkbox-label
+    color: $fontColor
+    cursor: pointer
 @media (max-width:  1440px)
     body
         font-size: 14px
@@ -87,3 +112,18 @@ body
         font-size: 30px
     .subtitle
         font-size: 16px
+@media (max-width:  768px)
+    .container 
+        width: 79.5%
+@media (max-width:  766px)
+    .container 
+        width: 87.5%
+    .input__text
+        width: 87.5%
+    body
+        font-size: 14px
+    .title 
+        font-size: 26px
+@media (max-width: 480px)
+    .subtitle
+        line-height: 26px

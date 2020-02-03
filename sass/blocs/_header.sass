@@ -1,13 +1,15 @@
-header
+.header
     position: relative
+    z-index: 65
     background-color: $headFootColor
     height: 80px
     &::after 
         position: absolute
+        z-index: 53
         content: ''
         height: 1px
-        width: 50%
-        right: 8.5%     
+        width: 55%
+        right: 5.5%     
         background-color: $mainColor
         bottom: -1px
 .navbar 
@@ -31,11 +33,101 @@ header
     margin-top: 30px
     &__item
         position: relative
-        margin-right: 50px
+        margin-right: 70px
         cursor: pointer
         +border-bottom_hover
+        &:last-of-type
+            margin-right: 0
+        &_link
+            text-decoration: none
+            color: $fontColor
+.header-burger__menu_active 
+    display: none
+.header-burger__menu
+    display: none
 @media (max-width:  1440px)
-    header
+    .header
         &::after            
             width: 75%
             right: 0
+@media (max-width:  768px)
+    .header
+        z-index: 100
+        &::after            
+            width: 40%
+            right: 10%
+        &-burger__menu 
+            text-align: center
+            cursor: pointer
+            position: absolute
+            display: block
+            top: 25px
+            right: 10%
+            display: flex
+            flex-direction: column
+            background-color: transparent
+            border: none
+            color: #fff
+            border: none
+            &:focus 
+                outline: none
+            &_line 
+                margin-top: 6px
+                width: 32px
+                height: 2px
+                background-color: $mainColor
+                transition: .5s
+                &:nth-child(2)
+                    width: 23px
+                    margin-left: 4.5px
+            &_active 
+                display: block
+                position: absolute
+                margin: 0
+                padding: 0
+                z-index: 54
+                list-style: none
+                width: 50%
+                right: 0
+                background-color: #fff
+                transform: translateY(-140%)
+                overflow: hidden
+                transition: .5s
+            &-item 
+                padding: 10px
+                border-bottom: 1px solid $mainColor
+                font-size: 10px
+                &_link 
+                    text-decoration: none
+                    color: $mainColor
+                    font-size: 24px
+    .active_burger 
+        transform: translateY(5%)
+        transition: .5s
+    .active_menu span 
+        &:nth-child(1) 
+            transform: rotate(45deg)
+            transition: .2s
+            transform-origin: left  
+    .active_menu span 
+        &:nth-child(2) 
+            display: none
+            transition: .2s
+    .active_menu span 
+        &:nth-child(3) 
+            transform: rotate(-45deg)
+            transition: .2s
+            transform-origin: left 
+            margin-top: 20px
+    .menu
+        display: none
+@media (max-width: 480px)
+    .header
+
+        &-burger__menu 
+            &_active 
+                width: 100%
+.logo
+    display: block
+    & span
+        width: 70%

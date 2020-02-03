@@ -5,14 +5,50 @@
         display: flex
         justify-content: space-between
     &__logo
+        width: 20%
 .wrap
     display: flex
     justify-content: space-between
     flex-basis: 80%
 .confidence
-    margin-top: 25px
+    margin-top: 22px
     font-size: 12px
+    line-height: 22px
 .creator
     text-align: right
-    margin-top: 25px
+    margin-top: 22px
     font-size: 12px
+    line-height: 22px
+@media (max-width:  766px)
+    .footer
+        &__logo
+            width: 40%
+    .wrap
+        flex-basis: 70%
+@media (max-width:  480px)
+    .footer
+        text-align: center
+        height: 100%
+        padding: 10px
+        &__wrap
+            display: block  
+        &__logo
+            margin-right: 0
+            margin-left: 20%
+            & > img
+            margin-top: 10px
+            float: none 
+        &__logo > span 
+            margin-top: 10px
+            margin-right: 0
+            width: 30%
+    .wrap
+        display: block 
+    .confidence
+        line-height: 26px
+        font-size: 12px
+    .creator
+        text-align: center
+        margin-top: 5px
+        line-height: 26px
+        font-size: 12px

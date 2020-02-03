@@ -3,6 +3,8 @@
     &__title
         padding: 0
         margin: 0
+    &__subtitle
+        margin-bottom: 60px
     &__wrap
         display: flex
         flex-wrap: wrap
@@ -20,6 +22,7 @@
             background-color: #FEFEFE
             padding: 0 20px 35px 30px
             border: 1px solid transparent
+            transition: .5s
             &:hover
                 border: 1px solid $strokeColor
         &-title
@@ -30,17 +33,20 @@
         &-description
             color: $mainColor
             line-height: 28px
+            height: 50px
     &__price
         padding: 30px
         +PlayFair(bold, 24px)
         color: $mainColor
     &__button
         float: right
+    &__slider
+        display: none
     &__more
         position: relative
         text-align: center
         margin-bottom: 2px
-        & > span
+        & > a 
             &::after 
                 position: absolute
                 content: ""
@@ -53,12 +59,11 @@
             &:hover
                 &:after 
                     width: 70px
-        & img
-            margin-bottom: 3px
+        & svg
             margin-left: 20px
 @media (max-width:  1440px)
     .catalog
-        padding: 50px 0px 100px 0px
+        padding: 100px 0px 100px 0px
         &__item
             &-img
                 height: 220px
@@ -70,3 +75,36 @@
             width: 150px
             padding: 10px
             margin-top: -10px
+@media (max-width: 768px)
+    .catalog
+        &__item
+            flex-basis: 40%
+            margin-right: 40px
+            margin-bottom: 40px
+            &:nth-of-type(2n)
+                margin-right: 0
+        &__more
+            & > a 
+                &::after 
+                    left: 44.5%    
+@media (max-width: 480px)
+    .catalog
+        &__item
+            flex-basis: 100%
+            margin-bottom: 40px
+            display: none
+            &:nth-of-type(1)
+                display: block
+        &__more
+            display: none
+        &__slider
+            text-align: center
+            display: block
+            margin: auto
+            margin-top: 10px
+            & > svg 
+                margin-right: 20px
+                & > path 
+                    &:hover
+                        stroke: $fontColor  
+                

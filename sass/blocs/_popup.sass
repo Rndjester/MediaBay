@@ -1,0 +1,61 @@
+.popup
+    position: absolute
+    width: 100%
+    min-height: 100%
+    background-color: rgba(0,0,0,0.3)
+    z-index: 72
+    overflow: hidden
+    position: fixed
+    top: 0px
+    &__content
+        z-index: 75
+        position: relative
+        padding: 45px 40px
+        margin: 140px auto 0px auto
+        width: 817px
+        min-height: 544px
+        background-color: #fff
+        border-radius: 5px
+    &__title
+        +Montserrat(500, 20px)
+        margin-bottom: 10px
+        margin-top: 0px
+        color: $mainColor
+    &__subtitle
+        +Montserrat(500, 14px)
+        color: $mainColor
+        margin-bottom: 45px
+    &__item
+        flex-basis: 35%
+        &-title
+            +Montserrat(bold, 20px)
+            margin-bottom: 10px
+            margin-top: 0px
+            color: $mainColor
+            padding-bottom: 5px
+            border-bottom: 2px solid $strokeColor
+        &-description
+            color: $mainColor
+            line-height: 28px
+    &__form
+        display: flex
+        flex-direction: column
+        flex-basis: 35%
+        color: $strokeColor
+    &__button
+        float: right
+    &_close
+        position: absolute
+        top: 45px
+        right: 40px
+        border: none
+        background-color: transparent
+        outline: none
+        cursor: pointer
+    &__wrap
+        display: flex
+        justify-content: space-between
+#popup__license 
+    margin-bottom: 15px 
+#popup__mailing
+    margin-bottom: 50px 

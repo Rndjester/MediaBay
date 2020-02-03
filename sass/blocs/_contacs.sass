@@ -3,14 +3,19 @@
         box-sizing: border-box
         position: absolute
         right: 0
+        top: 0
         background-color: $btnfontColor
         margin-top: 10px
-        padding: 75px 0px 75px 140px
+        padding: 70px 0px 75px 140px
         width: 44%
         height: 560px
     &__form
         display: flex
         flex-direction: column
+    &__title 
+        padding: 0
+        margin-top: 0
+        margin-bottom: 60px
 .contacts
     position: relative
     z-index: 1
@@ -46,8 +51,9 @@
             position: absolute
             content: '\2714'
             line-height: 10px
-            top: 5px
-            // color: #ffffff
+            top: 0
+            left: -20px
+            color: #ffffff
             font-size: 9px
             width: 10px
             height: 10px
@@ -63,33 +69,101 @@ input[type='checkbox']:checked + label:before
 @media (max-width: 1440px)
     .question
         &__block
-            right: 0
-            padding: 75px 100px 75px 140px
-            width: 51.2%
-            margin-top: 30px
-            height: 560px
+            z-index: 1
+            margin-top: 115px
+            width: 50%
     .contacts
-        margin-bottom: 256px
+        padding-top: 30px
         &__title
-            padding-top: 120px
+            padding-top: 100px
+            margin-bottom: 75px
+            padding-left: 0  
         &__wrap
-            width: 47%
+            width: 50%
         &__list
-            display: flex
-            flex-wrap: wrap 
             padding-left: 0px
-            margin-bottom: 56px
+            margin-bottom: 80px
         &__item
             font-size: 16px
             line-height: 20px
             &:nth-child(2n)
-                margin-left: 200px 
+                margin-left: 150px 
         &__back-title
-            z-index: -1
-            top: 170px
+            top: 260px
             left: 50px
             font-size: 220px
         &__maps
-            position: absolute
-            width: 700px
-            left: 0
+            z-index: 0
+            margin-left: -80px
+@media (max-width: 768px)
+    .question
+        &__block
+            position: relative
+            width: 100%
+            margin-top: 0
+    .contacts
+        display: block
+        padding-top: 50px
+        &__title
+            padding-top: 0px
+            margin-bottom: 50px
+            margin-left: 10%
+        &__wrap
+            position: relative
+            display: flex
+            flex-direction: column
+            width: 100%
+        &__list
+            display: flex
+            flex-wrap: wrap 
+            padding-left: 10%
+            margin-bottom: 10px
+        &__item
+            flex-basis: 40%
+            margin-left: 0
+            margin-top: 0
+            margin-bottom: 10px
+            &:nth-child(2n)
+                margin-left: 50px 
+        &__back-title
+            top: 0
+            font-size: 220px
+            left: -30px
+        &__maps
+            position: relative
+            width: 100%
+            margin-left: 0
+        &__container
+            width: 100%
+.form
+    &__button
+        margin-left: 100px
+@media (max-width: 480px)
+    .contacts   
+        padding-bottom: 60px
+    .question
+        &__block
+            padding-left: 5%
+    .contacts
+        &__title
+            margin-bottom: 40px
+        &__item
+            line-height: 26px
+            flex-basis: 100%
+            margin: 0
+            margin-left: 5%
+            margin-bottom: 10px
+            &:nth-child(2n)
+                margin-left: 5%
+        &__back-title
+            top: 150px
+            font-size: 120px
+            left: -30px
+        &__maps
+            height: 137px
+    .form__checkbox
+        &-label
+            font-size: 8px
+    .form
+        &__button
+            margin: auto

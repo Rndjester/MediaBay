@@ -13,15 +13,30 @@
             <nav class="navbar">
                 <a href="#" class="logo"><img src="img/main/logo.png" alt="Логотип"><span>Бриллианты Костромы</span></a>
                 <ul class="menu">
-                    <li class="menu__item">Главная</li>
-                    <li class="menu__item">Каталог</li>
-                    <li class="menu__item">Примерка и доставка</li>
-                    <li class="menu__item">О нас</li>
-                    <li class="menu__item">Производство</li>
-                    <li class="menu__item">Контакты</li>
+                    <li class="menu__item"> <a href = '#' class="menu__item_link">Главная</a></li>
+                    <li class="menu__item"> <a href = '#catalog' class="menu__item_link">Каталог</a></li>
+                    <li class="menu__item"> <a href = '#features' class="menu__item_link">Примерка и доставка</a></li>
+                    <li class="menu__item"> <a href = '#' class="menu__item_link">О нас</a></li>
+                    <li class="menu__item"> <a href = '#' class="menu__item_link">Производство</a></li>
+                    <li class="menu__item"> <a href = '#contacts' class="menu__item_link">Контакты</a></li>
                 </ul>
             </nav>
             <!--Окончание навигационной панели-->
+            <button class="header-burger__menu">
+                <span class="header-burger__menu_line"></span>
+                <span class="header-burger__menu_line"></span>
+                <span class="header-burger__menu_line"></span>    
+            </button>
+            <div class="header-burger__menu_active"></div>
+                <ul class="header-burger__menu_active">
+                    <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">Главная</a></li>
+                    <li class="header-burger__menu-item"> <a href = '#catalog' class="header-burger__menu-item_link">Каталог</a></li>
+                    <li class="header-burger__menu-item"> <a href = '#features' class="header-burger__menu-item_link">Примерка и доставка</a></li>
+                    <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">О нас</a></li>
+                    <li class="header-burger__menu-item"> <a href = '#' class="header-burger__menu-item_link">Производство</a></li>
+                    <li class="header-burger__menu-item"> <a href = '#contacts' class="header-burger__menu-item_link">Контакты</a></li>
+                </ul>
+            </div>  
         </div>
         <!--Окончание контейнера-->
     </header>
@@ -33,7 +48,7 @@
                     <div class="owl-slider__item"><img src="img/main/hero-slide-1.png" alt=""></div>
                     <div class="owl-slider__item"><img src="img/main/hero-slide-2.png" alt=""></div>
                 </div>
-                <div class="back-title">Pusets
+                <div class="back-title"><span>Pusets</span>
                     <div class="title-block">
                         <h1 class="title-block__title">Пусеты</h1>
                         <p class="title-block__subtitle">С бриллиантами и </br>драгоценными камнями</p>
@@ -44,7 +59,7 @@
             <!--Окончание контейнера-->
         </section>
         <!--Окончание главного экрана-->
-        <section class='catalog'>
+        <section class='catalog' id = 'catalog'>
             <div class="container">
                 <h3 class="catalog__title title">Специально для вас</h3>
                 <p class="catalog__subtitle subtitle">Мы собрали для вас лучшее из нашей коллекции</p>
@@ -63,61 +78,87 @@
                     <div class="catalog__item">
                         <div class="catalog__item-good">
                             <img src="img/catalog/jewelry-img-2.png" alt="" class="catalog__item-img">
-                            <h5 class="catalog__item-title">2778-10 Пусеты</h5>
-                            <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
+                            <h5 class="catalog__item-title">2804-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 8 шт. 0,219ct, опал 10 шт. 4,47ct</p>
                         </div>
                         <div class="catalog__price">
-                            203 720.-
+                            71 730.-
                             <button class = 'catalog__button'>Примерить</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <div class="catalog__item-good">
                             <img src="img/catalog/jewelry-img-3.png" alt="" class="catalog__item-img">
-                            <h5 class="catalog__item-title">2778-10 Пусеты</h5>
-                            <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
+                            <h5 class="catalog__item-title">0109/3-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, брилианты 2 шт. 0,219ct, рубин 54 шт. 0,474ct</p>
                         </div>
                         <div class="catalog__price">
-                            203 720.-
+                            70 820.-
                             <button class = 'catalog__button'>Примерить</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <div class="catalog__item-good">
                             <img src="img/catalog/jewelry-img-4.png" alt="" class="catalog__item-img">
-                            <h5 class="catalog__item-title">2778-10 Пусеты</h5>
-                            <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
+                            <h5 class="catalog__item-title">0057-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 90 шт.
+                                0,545ct | 3/4</p>
                         </div>
                         <div class="catalog__price">
-                            203 720.-
+                            63 800.-
                             <button class = 'catalog__button'>Примерить</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <div class="catalog__item-good">
                             <img src="img/catalog/jewelry-img-5.png" alt="" class="catalog__item-img">
-                            <h5 class="catalog__item-title">2778-10 Пусеты</h5>
-                            <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
+                            <h5 class="catalog__item-title">0053-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 2 шт.
+                                0,204ct | 3/5</p>
                         </div>
                         <div class="catalog__price">
-                            203 720.-
+                            41 460.-
                             <button class = 'catalog__button'>Примерить</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <div class="catalog__item-good">
                             <img src="img/catalog/jewelry-img-6.png" alt="" class="catalog__item-img">
-                            <h5 class="catalog__item-title">2778-10 Пусеты</h5>
-                            <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
+                            <h5 class="catalog__item-title">0101/6-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 30 шт.
+                                0,134ct, танзанит 2 шт. 1,19ct</p>
                         </div>
                         <div class="catalog__price">
-                            203 720.-
+                            39 470.-
                             <button class = 'catalog__button'>Примерить</button>
                         </div>
                     </div>
                     <div class="catalog__item">
                         <div class="catalog__item-good">
                             <img src="img/catalog/jewelry-img-7.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0025-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 2 шт.
+                                0,197ct  | 3/3</p>
+                        </div>
+                        <div class="catalog__price">
+                            37 850.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-8.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0043-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 14 шт. 0,356ct | 3/5</p>
+                        </div>
+                        <div class="catalog__price">
+                            35 895.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-1.png" alt="" class="catalog__item-img">
                             <h5 class="catalog__item-title">2778-10 Пусеты</h5>
                             <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
                         </div>
@@ -128,79 +169,185 @@
                     </div>
                     <div class="catalog__item">
                         <div class="catalog__item-good">
-                            <img src="img/catalog/jewelry-img-8.png" alt="" class="catalog__item-img">
-                            <h5 class="catalog__item-title">2778-10 Пусеты</h5>
-                            <p class="catalog__item-description">Золото, бриллианты 66 шт. 0,368ct, сапфир 8 шт., турмалин 2 шт.</p>
+                            <img src="img/catalog/jewelry-img-2.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">2804-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 8 шт. 0,219ct, опал 10 шт. 4,47ct</p>
                         </div>
                         <div class="catalog__price">
-                            203 720.-
+                            71 730.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-3.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0109/3-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, брилианты 2 шт. 0,219ct, рубин 54 шт. 0,474ct</p>
+                        </div>
+                        <div class="catalog__price">
+                            70 820.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-4.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0057-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 90 шт.
+                                0,545ct | 3/4</p>
+                        </div>
+                        <div class="catalog__price">
+                            63 800.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-5.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0053-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 2 шт.
+                                0,204ct | 3/5</p>
+                        </div>
+                        <div class="catalog__price">
+                            41 460.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-6.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0101/6-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 30 шт.
+                                0,134ct, танзанит 2 шт. 1,19ct</p>
+                        </div>
+                        <div class="catalog__price">
+                            39 470.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-7.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0025-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 2 шт.
+                                0,197ct  | 3/3</p>
+                        </div>
+                        <div class="catalog__price">
+                            37 850.-
+                            <button class = 'catalog__button'>Примерить</button>
+                        </div>
+                    </div>
+                    <div class="catalog__item">
+                        <div class="catalog__item-good">
+                            <img src="img/catalog/jewelry-img-8.png" alt="" class="catalog__item-img">
+                            <h5 class="catalog__item-title">0043-10 Пусеты</h5>
+                            <p class="catalog__item-description">Золото, бриллианты 14 шт. 0,356ct | 3/5</p>
+                        </div>
+                        <div class="catalog__price">
+                            35 895.-
                             <button class = 'catalog__button'>Примерить</button>
                         </div>
                     </div>
                 </div>
                 <!--Окончание обертки каталога-->
                 <div class="catalog__more">
-                    <span>Еще</span><img src="img/catalog/more-arrow.png" alt="">
+                    <a href = '#' class = 'link'>Еще<svg id = 'right-arrow' width="14" height="10" viewBox="0 0 14 5" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4H12L8 1" stroke="#403637"/></svg></a>
+                </div>
+                <div class="catalog__slider">
+                    <svg id = 'catalog__left-arrow' width="14" height="5" viewBox="0 0 14 5" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                        <path d="M14 1H2L6 4" stroke="#CBA696"/>
+                        </svg>
+                        <svg id = 'catalog__right-arrow' width="14" height="10" viewBox="0 0 14 5" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4H12L8 1" stroke="#CBA696"/></svg>
                 </div>
             </div>
             <!--Окончание контейнера-->
         </section>
+        <div class="popup">
+            <div class="popup__content">
+                <h4 class="popup__title">Оформление примерки</h4>
+                <p class="popup__subtitle">Заполните форму и мы свяжемся с вами для подтвержания примерки и уточнения деталей.</p>
+                <div class="popup__wrap">
+                    <div class="popup__item">
+                        <img src="img/catalog/jewelry-img-7.png" alt="" class="popup__item-img">
+                        <h5 class="popup__item-title"></h5>
+                        <p class="popup__item-description"></p>
+                    </div>
+                    <form action="" class="popup__form">
+                        <label for="name" class = 'form__input-label'>Имя</label>
+                        <input type="text" class="question__input input__text" id = 'name' pattern='^[А-Яа-яЁё\s]+$' required>
+                        <label for="tel" class = 'form__input-label'>Телефон</label>
+                        <input type="tel" class="question__input input__text" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" value="+7" name = 'tel'  required>
+                        <input type="email" class="question__input input__text" placeholder="Email" required>
+                        <input type="text" class="question__input input__text" placeholder="Сообщение" required>
+                        <div>
+                            <input type="checkbox" class = 'form__checkbox'name="" id="popup__license" required>
+                            <label for="popup__license" class = 'form__checkbox-label'>Принимаю соглашение об обработке персональных данных</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" class = 'form__checkbox' name="" id="popup__mailing">
+                            <label for="popup__mailing" class = 'form__checkbox-label'>Хочу получать рекламную рассылку “Бриллианты Костромы”</label>
+                        </div>
+                        
+                        <button type="submit" class="popup__button button">Заказать</button>
+                    </form>
+                    <button class = 'popup_close'><img src="img/catalog/popup-close.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+         <!--Окончание popup-->
         <!--Окончание блока каталог-->
-        <section class="features">
+        <section class="features" id = 'features'>
             <div class="container">
                 <h3 class="features__title title">Примерка и доставка</h3>
                 <p class="features__subtitle subtitle">Мы сделали все, чтобы вам было удобно и приятно выбирать</p>
                 <div class="features__wrap">
-                    <div class="features__item">
+                    <div class="features__item" id = 'features__item-1'>
                         <img src="img/features/features-1.png" alt="" class="features__item-img">
                         <h5 class="features__item-title">Примерка</h5>
                         <p class="features__item-description">Наш курьер привезет вам понравившиеся украшения и вы сможете их примерить в комфортной обстановке. Украшения, которые вам не подойдут курьер заберет с собой.</p>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item" id = 'features__item-2'>
                         <img src="img/features/features-2.png" alt="" class="features__item-img">
                         <h5 class="features__item-title">Доставка</h5>
                         <p class="features__item-description">Доставка осуществялется службой “Pony Express” в пункты выдачи и курьером на дом. Курьер свяжется с Вами для уточнения время и места доставки. Примерный срок доставки 7 рабочих дней.</p>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item" id = 'features__item-3'>
                         <img src="img/features/features-3.png" alt="" class="features__item-img">
                         <h5 class="features__item-title">Оплата</h5>
                         <p class="features__item-description">Оплата производиться при получении товара двумя удобными вам способами:
-                            – наличный расчет
-                            – банковская карта</p>
+                            </br> – наличный расчет
+                            </br>– банковская карта</p>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item" id = 'features__item-4'>
                         <img src="img/features/features-4.png" alt="" class="features__item-img">
                         <h5 class="features__item-title">Гарантии</h5>
                         <p class="features__item-description">Украшения ювелирного завода “Брилианнты Костромы” имеют все необходимые пометки
                             о подлинности:
                             <ul>
-                                <li> <span class = 'features__info'>i</span>Бирку</li>
-                                <li> <span class = 'features__info'>i</span>Именник</li>
-                                <li> <span class = 'features__info'>i</span>Пробирное клеймо</li>
+                                <li> <div class="features__info-description">сертефикат соответсвия заявленным характеристикам камней и металла</div><span class = 'features__info'>i</span>Бирку</li>
+                                <li> <div class="features__info-description">сертефикат соответсвия заявленным характеристикам камней и металла</div><span class = 'features__info'>i</span>Именник</li>
+                                <li> <div class="features__info-description">сертефикат соответсвия заявленным характеристикам камней и металла</div><span class = 'features__info'>i</span>Пробирное клеймо</li>
                             </ul>
                                 </p>
                     </div>
                 </div>
                 <!--Окончание обертки каталога-->
+                <div class="features__slider_mobile">
+                    <svg id = 'features__left-arrow' width="14" height="5" viewBox="0 0 14 5" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M14 1H2L6 4" stroke="#CBA696"/>
+                    </svg>
+                    <svg id = 'features__right-arrow' width="14" height="10" viewBox="0 0 14 5" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4H12L8 1" stroke="#CBA696"/></svg>
+                </div>
             </div>
             <!--Окончание контейнера-->
         </section>
         <!--Окончание блока преимуществ-->
-        <section class = 'contacts'>
-            <div class="container">
-                <div class="question__block">
-                    <h3 class="question__title title">Есть вопросы?</h3>
-                    <form action="" class="question__form">
-                        <input type="text" class="question__input input__text" placeholder="Имя" required>
-                        <input type="email" class="question__input input__text" placeholder="Email" required>
-                        <input type="text" class="question__input input__text" placeholder="Сообщение" required>
-                        
-                        <label for="license" class = 'form__checkbox-label'><input type="checkbox" class = 'form__checkbox'name="" id="license" required>Принимаю соглашение об обработке персональных данных</label>
-                        
-                        <label for="mailing" class = 'form__checkbox-label'><input type="checkbox" class = 'form__checkbox' name="" id="mailing">Хочу получать рекламную рассылку “Бриллианты Костромы”</label>
-                        <input type="submit" class="form__button button">
-                    </form>
-                </div>
+        <section class = 'contacts' id = 'contacts'>
+            <div class="container contacts__container">
                 <div class="contacts__wrap">
                     <h3 class="contacts__title title">Контакты</h3>
                     <div class="contacts__list">
@@ -208,9 +355,29 @@
                         <p class="contacts__item">info@best-brilliant.ru</p>
                         <p class="contacts__item">156019, г. Кострома,
                             ул. Локомотивная, д. 2 ж</p>
-                        <p class="contacts__item">Основной сайт</p>
+                        <p class="contacts__item"><a href = '#' class = 'cite__link link'>Основной сайт <svg id = 'right-arrow' width="14" height="10" viewBox="0 0 14 5" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 4H12L8 1" stroke="#403637"/></svg></a></p>
                     </div>
                     <div class = 'contacts__back-title'>Pusets</div>
+                    <div class="question__block">
+                        <h3 class="question__title title">Есть вопросы?</h3>
+                        <form action="" class="question__form">
+                            <label for="name" class = 'form__input-label'>Имя</label>
+                            <input type="text" class="question__input input__text" pattern='^[А-Яа-яЁё\s]+$' id = 'name' required>
+                            <input type="email" class="question__input input__text" placeholder="Email" required>
+                            <input type="text" class="question__input input__text" placeholder="Сообщение" required>
+                            <div>
+                                <input type="checkbox" class = 'form__checkbox'name="" id="license" required>
+                                <label for="license" class = 'form__checkbox-label'>Принимаю соглашение об обработке персональных данных</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" class = 'form__checkbox' name="" id="mailing">
+                                <label for="mailing" class = 'form__checkbox-label'>Хочу получать рекламную рассылку “Бриллианты Костромы”</label>
+                            </div>
+                            <button type="submit" class="form__button button">Отправить</button>
+                        </form>
+                    </div>
                     <div class="contacts__maps">
                         <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                             <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
@@ -235,14 +402,15 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrap">
-                <a href="#" class="footer_logo logo"><img src="img/main/logo.png" alt="Логотип"><span>Бриллианты </br>Костромы</span></a>
+                <a href="#" class="footer__logo logo"><img src="img/main/logo.png" alt="Логотип"><span>Бриллианты </br>Костромы</span></a>
                 <div class="wrap">
                     <div class="confidence">Политика конфиденциальности</br>&copy; 2014–2019 «Бриллианты Костромы»</div>
-                    <div class="creator">Основной сайт </br>Разработка - media bay</div>
+                    <div class="creator"><a href = '#' class = 'cite__link link'>Основной сайт </a></br>Разработка - media bay</div>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

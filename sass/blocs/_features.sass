@@ -8,10 +8,16 @@
     &__item
         flex-basis: 23%
         margin-right: 70px
-        &-title
-            border-bottom: 1px solid $strokeColor
-            margin: 20px 0 
+        margin-bottom: 20px
+        & > img
+            display: block
+        &-title  
+            margin-top: 30px
+            margin-bottom: 10px
+            display: inline-block
+            padding-bottom: 2px
             +PlayFair(bold, 20px)
+            border-bottom: 1px solid $strokeColor
         &-description
             line-height: 26px
             & + ul 
@@ -20,18 +26,73 @@
                 margin: -10px -5px
                 list-style: none
                 & > li
+                    position: relative
                     margin-bottom: 10px
     &__info
         position: relative
         font-size: 8px
         text-align: center
         position: absolute
-        left: 5px
+        left: -20px
         margin-top: 3px
         min-width: 11px
         min-height: 11px
         color: $strokeColor
         background-color: $btnfontColor
         border: 1px solid $strokeColor
-
+        cursor: pointer
+        &:hover + .features__info-description
+            display: block
+        &-description
+            display: none
+            position: absolute
+            font-size: 10px
+            left: -182px  
+            bottom: -60px  
+            z-index: 40
+            box-sizing: border-box
+            width: 182px
+            padding: 10px   
+            color: $strokeColor
+            background-color: $btnfontColor
+    &__slider_mobile
+        display: none
+@media (max-width:  768px)
+    .features
+        &__wrap
+            flex-wrap: wrap
+            margin-top: 55px
+        &__item
+            flex-basis: 45%
+            margin-right: 40px
+            &:nth-of-type(even)
+                margin-right: 0px
+@media (max-width: 480px)
+    .features
+        &__wrap
+            flex-wrap: wrap
+            margin-top: 25px
+        &__item
+            flex-basis: 100%
+            margin-right: 0  
+            display: none
+            padding: 0 5%
+            &:nth-of-type(1)
+                display: block
+            & img 
+                margin: auto
+            &-title
+                margin-bottom: 10px
+        &__slider_mobile
+            text-align: center
+            display: block
+            margin: auto
+            margin-top: 10px
+            & > svg 
+                margin-right: 20px
+                & > path 
+                    &:first-of-type
+                        margin-top: 20px
+                    &:hover
+                        stroke: $fontColor                           
 
