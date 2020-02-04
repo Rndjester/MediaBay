@@ -876,7 +876,7 @@ body {
 }
 
 .popup__button {
-  float: right;
+  margin-left: 170px;
 }
 
 .popup_close {
