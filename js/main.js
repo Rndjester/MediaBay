@@ -148,4 +148,13 @@ $(document).ready(function(){
         }
         $('#catalog__item-'+catalogIndexActive).delay(catalogAnimationSpeed).fadeIn(catalogAnimationSpeed)
     })
+    
+    //  Скроллинг якорей
+
+    $(".menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 })
